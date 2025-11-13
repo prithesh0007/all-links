@@ -3,8 +3,7 @@
 <head>
     <title>Open All Links</title>
     <script>
-        function openLinks() {
-            // Attempt auto-open (may be blocked)
+        function openAll() {
             window.open("https://aiskillshouse.com/student/qr-mediator.html?uid=6231&promptId=22");
             window.open("https://aiskillshouse.com/student/qr-mediator.html?uid=6231&promptId=21");
             window.open("https://aiskillshouse.com/student/qr-mediator.html?uid=6231&promptId=20");
@@ -13,15 +12,15 @@
         }
     </script>
 </head>
-<body onload="openLinks()">
+<body>
 
-    <h2>Click below if links did not open automatically:</h2>
+    <h2>Click the button to open all links:</h2>
 
-    <p><a href="https://aiskillshouse.com/student/qr-mediator.html?uid=6231&promptId=22" target="_blank">Open Link 1</a></p>
-    <p><a href="https://aiskillshouse.com/student/qr-mediator.html?uid=6231&promptId=21" target="_blank">Open Link 2</a></p>
-    <p><a href="https://aiskillshouse.com/student/qr-mediator.html?uid=6231&promptId=20" target="_blank">Open Link 3</a></p>
-    <p><a href="https://aiskillshouse.com/student/qr-mediator.html?uid=6231&promptId=19" target="_blank">Open Link 4</a></p>
-    <p><a href="https://aiskillshouse.com/student/qr-mediator.html?uid=6231&promptId=18" target="_blank">Open Link 5</a></p>
+    <button 
+        onclick="openAll()" 
+        style="padding: 15px 30px; font-size: 18px; cursor: pointer;">
+        Open All Links
+    </button>
 
 </body>
 </html>
